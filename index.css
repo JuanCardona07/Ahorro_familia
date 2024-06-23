@@ -1,0 +1,82 @@
+/* Estilos base */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-weight: 700;
+}
+
+#bancolombia-btn {
+    background-color: #ffd700;
+    color: #333333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#bancolombia-btn:hover {
+    background-color: #ffec8b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+#bancolombia-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+}
+
+/* Animación para el título */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #bancolombia-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #bancolombia-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
